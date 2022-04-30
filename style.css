@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: #191716;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 38px 2px;
+    margin-right: 6%;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24x;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #4D7C8A;
+    display: block;
+    margin: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    color: #fff;
+    position: absolute;
+    left: 0%;
+    right: 0;
+    margin: auto;
+    border: 1px solid #FFF;
+    min-height: 60vh;
+    width: 60vw;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(226, 226, 226, .1);
+}
+
+.text-box a {
+    font-size: 20px;    
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 8px 26px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #275DAD;
+    background: #275DAD;
+    transition: 1s;
+}
+
+.controllers-container {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+
+}
+
+.field-basic {
+    background: #FFF;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: all .35s ease;
+    border: 0;
+}
+
+.controllers-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    bottom: 20px;
+    text-align: center;
+}
+
+.field-basic:focus,
+.field-basic:active {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.game-title {
+    font-size: 32px;
+    color: #FFF;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 20px;
+    text-align: center;
+}
+
+.presentation-image {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
